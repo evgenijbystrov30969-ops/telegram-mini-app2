@@ -3,42 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Евгений - Сайты и Анимация</title>
+    <title>Евгений Бистров — Сайты и Анимация</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fraunces:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Приветствие -->
-        <div class="header">
-            <h1>👋 Евгений</h1>
-            <p>Сайты и анимация для вашего бизнеса</p>
-        </div>
+    <div class="app">
+        
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-label">WEB · DESIGN · MOTION</div>
+            <h1 class="hero-title">
+                Евгений<br>
+                <span class="accent">Бистров</span>
+            </h1>
+            <p class="hero-subtitle">
+                Создаю сайты и анимацию, которые приносят клиентов, а не просто красиво выглядят
+            </p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-num">50+</div>
+                    <div class="stat-label">проектов</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">5 лет</div>
+                    <div class="stat-label">опыта</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">100%</div>
+                    <div class="stat-label">до результата</div>
+                </div>
+            </div>
+        </section>
 
-        <!-- Услуги -->
-        <div class="services">
-            <div class="service-card" onclick="showSection('websites')">
-                <div class="icon">🌐</div>
+        <!-- УСЛУГИ -->
+        <section class="section">
+            <div class="section-label">01 / УСЛУГИ</div>
+            <h2 class="section-title">Два направления —<br>один исполнитель</h2>
+
+            <div class="service-card" onclick="showService('sites')">
+                <div class="service-mark">01</div>
+                <div class="service-icon">🌐</div>
                 <h3>Разработка сайтов</h3>
-                <p>Под ключ, доработка, поддержка</p>
+                <p class="service-desc">
+                    Полный цикл: от структуры до запуска. Работаю с WordPress, Tilda и другими CMS.
+                </p>
+                <ul class="service-list">
+                    <li>Сайты под ключ</li>
+                    <li>Доработка и модернизация</li>
+                    <li>Техническая поддержка</li>
+                    <li>Оптимизация скорости</li>
+                </ul>
+                <div class="service-cta">Подробнее →</div>
             </div>
 
-            <div class="service-card" onclick="showSection('animation')">
-                <div class="icon">🎬</div>
-                <h3>Анимация</h3>
-                <p>Ролики для рекламы и соцсетей</p>
+            <div class="service-card" onclick="showService('animation')">
+                <div class="service-mark">02</div>
+                <div class="service-icon">🎬</div>
+                <h3>Анимация для продаж</h3>
+                <p class="service-desc">
+                    Короткие ролики, которые объясняют продукт за 30 секунд и усиливают конверсию.
+                </p>
+                <ul class="service-list">
+                    <li>Реклама в Instagram / TikTok</li>
+                    <li>Анимация для лендингов</li>
+                    <li>Презентации продуктов</li>
+                    <li>Сторителлинг и эмоции</li>
+                </ul>
+                <div class="service-cta">Подробнее →</div>
             </div>
-        </div>
+        </section>
 
-        <!-- Контакты -->
-        <div class="contacts">
-            <a href="https://t.me/saytologiya" class="btn btn-primary">
-                📩 Telegram-портфолио
-            </a>
-            <a href="https://wa.me/79884646813" class="btn btn-secondary">
-                💬 Написать в WhatsApp
-            </a>
-        </div>
+        <!-- ПОЧЕМУ Я -->
+        <section class="section section-dark">
+            <div class="section-label light">02 / ПРЕИМУЩЕСТВА</div>
+            <h2 class="section-title light">Почему со мной<br>работают</h2>
+
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-num">01</div>
+                    <h4>До результата</h4>
+                    <p>Веду проект, а не «сдал и пропал»</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-num">02</div>
+                    <h4>Стабильность</h4>
+                    <p>Отвечаю за работоспособность сайта</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-num">03</div>
+                    <h4>Всё в одном</h4>
+                    <p>Сайт + анимация без лишних подрядчиков</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-num">04</div>
+                    <h4>Фокус на продажах</h4>
+                    <p>Заявки, обращения, конверсия — главное</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- КАЛЬКУЛЯТОР -->
+        <section class="section">
+            <div class="section-label">03 / РАСЧЁТ</div>
+            <h2 class="section-title">Рассчитайте<br>стоимость</h2>
+            <p class="section-subtitle">Выберите параметры — получите ориентир за 10 секунд</p>
+
+            <div class="calculator">
+                <div class="calc-group">
+                    <label>Тип услуги</label>
+                    <select id="calc-type" onchange="calculate()">
+                        <option value="site">Сайт под ключ</option>
+                        <option value="animation">Анимация</option>
+                        <option value="support">Поддержка сайта</option>
+                    </select>
+                </div>
+
+                <div class="calc-group">
+                    <label>Сложность</label>
+                    <select id="calc-level" onchange="calculate()">
+                        <option value="simple">Простой (лендинг)</option>
+                        <option value="medium">Средний (многостраничный)</option>
+                        <option value="complex">Сложный (интернет-магазин)</option>
+                    </select>
+                </div>
+
+                <div class="calc-group">
+                    <label>Дополнительно</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox">
+                            <input type="checkbox" id="opt-seo" onchange="calculate()">
+                            <span>SEO-оптимизация</span>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" id="opt-content" onchange="calculate()">
+                            <span>Наполнение контентом</span>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" id="opt-support" onchange="calculate()">
+                            <span>Поддержка 3 месяца</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="calc-result">
+                    <div class="calc-result-label">Ориентировочно:</div>
+                    <div class="calc-result-price" id="calc-price">от 25 000 ₽</div>
+                    <div class="calc-result-term" id="calc-term">Срок: 7–14 дней</div>
+                </div>
+
+                <button class="btn-primary" onclick="orderProject()">
+                    Оставить заявку
+                </button>
+            </div>
+        </section>
+
+        <!-- КОНТАКТЫ -->
+        <section class="section section-dark">
+            <div class="section-label light">04 / КОНТАКТЫ</div>
+            <h2 class="section-title light">Давайте<br>обсудим проект</h2>
+
+            <div class="contacts">
+                <a href="https://t.me/saytologiya" class="contact-btn">
+                    <span class="contact-icon">✈️</span>
+                    <div>
+                        <div class="contact-title">Telegram</div>
+                        <div class="contact-sub">Портфолио и быстрая связь</div>
+                    </div>
+                </a>
+
+                <a href="https://wa.me/79884646813" class="contact-btn">
+                    <span class="contact-icon">💬</span>
+                    <div>
+                        <div class="contact-title">WhatsApp</div>
+                        <div class="contact-sub">+7 (988) 464-68-13</div>
+                    </div>
+                </a>
+
+                <a href="tel:+79884646813" class="contact-btn">
+                    <span class="contact-icon">📞</span>
+                    <div>
+                        <div class="contact-title">Позвонить</div>
+                        <div class="contact-sub">Обсудим детали голосом</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="footer">
+                <div class="footer-logo">EB</div>
+                <div class="footer-text">© 2026 Евгений Бистров<br>Сайты · Анимация · Результат</div>
+            </div>
+        </section>
+
     </div>
 
     <script src="app.js"></script>
