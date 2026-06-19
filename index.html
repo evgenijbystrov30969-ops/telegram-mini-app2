@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Евгений - Сайты и Анимация</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Приветствие -->
+        <div class="header">
+            <h1>👋 Евгений</h1>
+            <p>Сайты и анимация для вашего бизнеса</p>
+        </div>
+
+        <!-- Услуги -->
+        <div class="services">
+            <div class="service-card" onclick="showSection('websites')">
+                <div class="icon">🌐</div>
+                <h3>Разработка сайтов</h3>
+                <p>Под ключ, доработка, поддержка</p>
+            </div>
+
+            <div class="service-card" onclick="showSection('animation')">
+                <div class="icon">🎬</div>
+                <h3>Анимация</h3>
+                <p>Ролики для рекламы и соцсетей</p>
+            </div>
+        </div>
+
+        <!-- Контакты -->
+        <div class="contacts">
+            <a href="https://t.me/saytologiya" class="btn btn-primary">
+                📩 Telegram-портфолио
+            </a>
+            <a href="https://wa.me/79884646813" class="btn btn-secondary">
+                💬 Написать в WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
